@@ -1,0 +1,565 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  font-size: 15px;
+}
+
+.flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header .mynavbar {
+  width: 100%;
+  height: 5rem;
+  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(41%, #090979), color-stop(75%, #00d4ff));
+  background: linear-gradient(90deg, #020024 0%, #090979 41%, #00d4ff 75%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .mynavbar h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-left: 2rem;
+  margin-top: 10px;
+}
+
+header .mynavbar h1 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header .mynavbar ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .mynavbar ul li {
+  list-style: none;
+  margin: 0 1rem;
+  margin-top: 1.5rem;
+}
+
+header .mynavbar ul li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+header .mynavbar ul li a:hover {
+  color: #34b7a7;
+  text-decoration: underline;
+}
+
+header .mynavbar .social a {
+  text-decoration: none;
+  margin-right: 2rem;
+}
+
+header .mynavbar .social a i {
+  font-size: 2rem;
+  margin-top: 1.5rem;
+  color: #fff;
+}
+
+header .mynavbar .social a i:hover {
+  color: royalblue;
+}
+
+header .mynavbar button {
+  float: right;
+  display: none;
+  width: 40px;
+  height: 2.6rem;
+  font-size: 2rem;
+  color: #000;
+  border: 0;
+  background-color: transparent;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.5))), url(../img/banner.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.5) 100%), url(../img/banner.jpg);
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.banner .inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20rem;
+}
+
+.banner .inner h1 {
+  font-size: 4rem;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  margin-bottom: 3rem;
+}
+
+.banner .inner h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  margin-bottom: 3rem;
+}
+
+.banner .inner a {
+  text-decoration: none;
+}
+
+.banner .inner a button {
+  width: 10rem;
+  height: 3rem;
+  background-color: transparent;
+  border: 2px solid #34b7a7;
+  border-radius: 30px;
+  color: #34b7a7;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.banner .inner a button:hover {
+  border-color: #5cd65a;
+  color: #5cd65a;
+}
+
+footer {
+  width: 100%;
+  height: 7rem;
+  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(41%, #090979), color-stop(75%, #00d4ff));
+  background: linear-gradient(90deg, #020024 0%, #090979 41%, #00d4ff 75%);
+  color: #fff;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1rem !important;
+  letter-spacing: 0.1rem !important;
+  padding-top: 1.5rem !important;
+}
+
+footer p span {
+  color: #34b7a7;
+  cursor: pointer;
+}
+
+footer p span:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 992px) {
+  header .mynavbar {
+    height: 3rem;
+  }
+  header .mynavbar h1 {
+    font-size: 2rem;
+    margin-top: 5px;
+  }
+  header .mynavbar ul li {
+    margin-top: 1rem;
+  }
+  header .mynavbar ul li a {
+    font-size: 1rem;
+  }
+  header .mynavbar .social a i {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  .banner .inner h1 {
+    font-size: 2.5rem;
+  }
+  .banner .inner h2 {
+    font-size: 1.2rem;
+  }
+  .banner .inner a button {
+    width: 8rem;
+    height: 2.5rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 667px) {
+  header .mynavbar h1 {
+    font-size: 1.5rem;
+    margin-top: 7px;
+  }
+  header .mynavbar ul {
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    padding-left: 0;
+    background: #34b7a7;
+    width: 100%;
+    max-width: 100%;
+  }
+  header .mynavbar ul a {
+    color: #5cd65a;
+  }
+  header .mynavbar button {
+    display: block;
+    margin-top: 0.3rem;
+  }
+  .banner .inner h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .banner .inner h2 {
+    font-size: 1rem;
+    padding: 0 3rem;
+  }
+  footer p {
+    font-size: 0.8rem;
+  }
+}
+
+.about h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  margin-top: 3rem;
+  color: #34b7a7;
+}
+
+.about p {
+  font-size: 1.2rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  line-height: 2.5rem;
+  color: #5cd65a;
+  margin: 2rem 0;
+}
+
+.about p a {
+  text-decoration: none;
+  color: #5cd65a;
+}
+
+.about p a:hover {
+  text-decoration: underline;
+  color: #34b7a7;
+}
+
+.about .two-section .left {
+  width: 40%;
+}
+
+.about .two-section .left img {
+  width: 80%;
+}
+
+.about .two-section .right {
+  width: 60%;
+  text-align: left;
+}
+
+.about .two-section .right h2 {
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  color: #34b7a7;
+  margin-bottom: 2rem;
+}
+
+.about .two-section .right section ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about .two-section .right section ul li {
+  width: 50%;
+  list-style: none;
+  font-size: 1.2rem;
+  color: gray;
+  margin-bottom: 3rem;
+}
+
+.about .two-section .right section ul li strong {
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.about .two-section .right section ul li a {
+  text-decoration: none;
+  color: gray;
+}
+
+.about .two-section .right section ul li a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+.container {
+  margin-top: 3rem;
+}
+
+.container h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+  color: #34b7a7;
+  text-align: center;
+}
+
+.container .skills {
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .skills .myskill {
+  width: 50%;
+  margin-bottom: 3rem;
+}
+
+.container .skills .myskill label {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #5cd65a;
+  font-family: "Poppins", sans-serif;
+  margin-right: 2rem;
+}
+
+.container .skills .myskill #file {
+  width: 50%;
+  height: 2rem;
+}
+
+@media (max-width: 992px) {
+  .about h1 {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+  .about p {
+    font-size: 1rem;
+    line-height: 2rem;
+    margin: 1.5rem 0;
+    padding: 0 3rem;
+  }
+  .about .two-section .right h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .about .two-section .right section ul li {
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+  }
+  .about .two-section .right section ul li strong {
+    font-size: 1.2rem;
+  }
+  .container {
+    margin-top: 2.5rem;
+  }
+  .container h2 {
+    font-size: 2rem;
+  }
+  .container .skills {
+    margin-top: 2.5rem;
+  }
+  .container .skills .myskill {
+    margin-bottom: 2.5rem;
+  }
+  .container .skills .myskill label {
+    font-size: 1.2rem;
+    margin-right: 1.5rem;
+  }
+  .container .skills .myskill #file {
+    width: 40%;
+    height: 1.5rem;
+  }
+}
+
+@media (max-width: 747px) {
+  .container .skills .myskill #file {
+    width: 80%;
+  }
+}
+
+@media (max-width: 667px) {
+  .about h1 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+  .about p {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    margin: 1rem 0;
+  }
+  .about .two-section .left {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .about .two-section .left img {
+    width: 70%;
+    border-radius: 100%;
+  }
+  .about .two-section .right {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .about .two-section .right h2 {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+  }
+  .about .two-section .right section ul li {
+    width: 90%;
+    font-size: 1rem;
+  }
+  .about .two-section .right section ul li strong {
+    font-size: 1.2rem;
+  }
+  .container {
+    margin-top: 2rem;
+  }
+  .container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .container .skills {
+    margin-top: 2rem;
+  }
+  .container .skills .myskill {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+  }
+  .container .skills .myskill label {
+    font-size: 1.5rem;
+  }
+  .container .skills .myskill #file {
+    width: 90%;
+    height: 2.5rem;
+  }
+}
+
+.resume {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.resume h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  color: #34b7a7;
+  font-family: "Raleway", sans-serif;
+}
+
+.resume h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.resume h4 {
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "Raleway", sans-serif;
+  margin-top: 1rem;
+  color: #5cd65a;
+}
+
+.resume h4 a {
+  text-decoration: none;
+  color: #5cd65a;
+}
+
+.resume h4 a:hover {
+  text-decoration: underline;
+  color: #34b7a7;
+}
+
+.resume .mypart {
+  margin: 0 4rem;
+}
+
+.resume .mypart .resume-item {
+  width: 48%;
+}
+
+.resume .mypart .resume-item .box {
+  width: 45%;
+  margin-top: 2rem;
+}
+
+.resume .mypart .resume-item .box h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  color: #34b7a7;
+  text-align: left;
+}
+
+.resume .mypart .resume-item .box ul {
+  list-style: square;
+}
+
+.resume .mypart .resume-item .box ul li {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .resume .mypart .box {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=style.css.map */
